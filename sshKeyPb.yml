@@ -1,0 +1,9 @@
+---
+ - hosts: web
+   tasks:
+   	- name: connection
+   	   authorized_key:
+   	    user: ubuntu
+   		key: ~/keys/devopsKey.pem
+   		state: present
+
